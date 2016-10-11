@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>jquery.pointerEvents</title>
+    <style>
+        .point {
+            background-color: grey;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+<div class="point">
+
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="jquery.pointerEvents.js"></script>
+
+<script>
+
+    $('.point').pointerEvents({
+        onPointerDown: function(e) {
+            console.log('onPointerDown', e)
+        },
+        onPointerMove: function(e) {
+
+        },
+        onPointerUp: function(e) {
+            console.log('onPointerUp', e)
+        }
+    });
+</script>
+</body>
+
+</html>
