@@ -39,6 +39,7 @@
             this.$el.on('touchstart mousedown pointerdown', this._onPointerDown);
             this.$el.on('touchmove mousemove pointermove', this._onPointerMove);
             this.$el.on('touchend mouseup pointerup', this._onPointerUp);
+            this.$el.data('pointerEvents', this);
 
         },
 
